@@ -4,11 +4,11 @@ Standard jumper configuration: Pads 2, 4, 6, 8, 10, and 12 are shorted.
 
 Preliminary analysis suggests the following operation of the GAL, multiplexer, and NAND gates:  
 
-/O19 = A 0x7FF8 and BA 0x0, 0x2, 0x4, 0x6
+/O19 = A 0xFFE8 and BA 0x0, 0x2, 0x4, 0x6
 
-/O18 = A 0x2C00 to 0x2C0F, 0x2C20 to 0x2C2F, ... 0x2FE0 to 0x2FEF ; BA 0x0 to 0x1F
+/SRAM.CS = A 0x2C00 to 0x2FFF and BA 0x0 to 0x1F
 
-When SRAM.CS is high, Famicom CICs 1 and 2 are connected to the system.
+When Famicom cart is inserted, Famicom CICs 1 and 2 are connected to the system.
 When Famicom cart is not inserted, SNES cart CICs 1 and 2 are connected to the system.
 
 The operation of the 18CV8PC is unknown at this time, but I will be analyzing it in operation for reverse engineering.
