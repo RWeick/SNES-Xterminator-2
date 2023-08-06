@@ -6,7 +6,7 @@ Preliminary analysis suggests the following operation of the GAL, multiplexer, a
 
 /O19 = A 0xFFE8 and BA 0x0, 0x2, 0x4, 0x6
 
-/SRAM.CS = A 0x2C00 to 0x2FFF and BA 0x0 to 0x1F
+/SRAM.CS = A 0x2C00 to 0x2FFF and BA 0x0 to 0x1F, which aligns with the fact that the SRAM has 32,768 words.
 
 When Famicom cart is inserted, Famicom CICs 1 and 2 are connected to the system.
 When Famicom cart is not inserted, SNES cart CICs 1 and 2 are connected to the system.
